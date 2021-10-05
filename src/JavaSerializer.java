@@ -23,7 +23,7 @@ public class JavaSerializer {
         return null;
     }
 
-    public static void writeToFile(Serializable s){
+    private static void writeToFile(Serializable s){
         try {
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("User.obj"));
             objectOutputStream.writeObject(s);
