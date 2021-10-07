@@ -4,19 +4,26 @@
 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.javatpoint.application1</groupId>
+    <groupId>gruppe4</groupId>
     <artifactId>XMLserialiser</artifactId>
     <version>1</version>
+    <packaging>war</packaging>
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>11</source>
-                    <target>11</target>
+                    <source>15</source>
+                    <target>15</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
+
+            </plugin>
+
         </plugins>
     </build>
     <dependencies>
@@ -25,6 +32,12 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
             <artifactId>jackson-dataformat-xml</artifactId>
             <version>2.12.5</version>
         </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+
     </dependencies>
 
 </project>
